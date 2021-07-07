@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+.SP {
+    width: 170px;
+    height: 250px;
+    margin: 10px;
+}
+input {
+    width: 50px;
+    text-align: center;
+}
+.ngang {
+    display: flex;
+}
+.haiPhan {
+    display: flex;
+    justify-content: space-evenly;
+}
+.nhap {
+    width: 200px;
+    text-align: center;
+}

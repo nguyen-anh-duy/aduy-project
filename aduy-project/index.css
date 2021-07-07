@@ -1,0 +1,58 @@
+#tieuDe {
+    display: flex;
+    justify-content: center;
+}
+.gioHang {
+    display: flex;
+    justify-content: flex-end;
+}
+.hinhCover {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+.gioiThieu {
+    text-align: center;
+}
+.SP {
+    width: 170px;
+    height: 250px;
+    margin: 10px;
+}
+div p {
+    text-align: center;
+}
+input {
+    width: 50px;
+    text-align: center;
+}
+.hinhSP {
+    display: flex;
+    justify-content: space-evenly;
+}
+$shopping-cart-red: #DF0000;
+
+.fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:0%;
+  content: attr(data-count);
+  font-size:40%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  color:$shopping-cart-red;
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
+  background: white;
+  border-style:solid;
+}
+.fa-circle {
+  color:#DF0000;
+}
+
+.red-cart {
+	color: #DF0000; background:white;
+}
