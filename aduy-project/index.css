@@ -30,7 +30,7 @@ input {
     display: flex;
     justify-content: space-evenly;
 }
-$shopping-cart-red: #DF0000;
+shopping-cart-red #DF0000
 
 .fa-stack[data-count]:after{
   position:absolute;
@@ -42,7 +42,7 @@ $shopping-cart-red: #DF0000;
   border-radius:999px;
   line-height:.75em;
   color: white;
-  color:$shopping-cart-red;
+  color:#DF0000;
   text-align:center;
   min-width:2em;
   font-weight:bold;
