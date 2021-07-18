@@ -2,28 +2,24 @@ var beginNumber = document.getElementsByClassName("beginNumber");
 var buttonCong = document.getElementsByClassName("buttonCong");
 var buttonTru = document.getElementsByClassName("buttonTru");
 var themGioHang = document.getElementsByClassName("themGioHang");
-for(var i=0; i<buttonCong.length; i++){
-    var buttonC = buttonCong[i]
-    var beginN = beginNumber[i]
-    buttonC.addEventListener("click",function(x){
-        buttonC.target.value = 1;
-        x = Number(beginN.target.value) + Number(buttonC.target.value);
-        beginN.target.value = x;
-    });
+
+for ( let i = 0 ; i<buttonCong.length; i++) {
+    buttonCong[i].addEventListener("click",function(){
+        buttonCong[i].value = 1
+        beginNumber[i].value = Number(beginNumber[i].value) + Number(buttonCong[i].value);
+    })
 }
 
-buttonTru.addEventListener("click",tru);
-
-// function cong(x){
-//     buttonCong.value = 1;
-//     x = Number(beginNumber.value) + Number(buttonCong.value);
-//     beginNumber.value = x;
-// }
-function tru(x){
-    buttonTru.value = 1;
-    x = Number(beginNumber.value) - Number(buttonTru.value);
-    beginNumber.value = x;
+for ( let i = 0; i<buttonTru.length; i++) {
+    buttonTru[i].addEventListener("click",function(){
+        buttonTru[i].value = 1
+        beginNumber[i].value = Number(beginNumber[i].value) - Number(buttonTru[i].value);
+        if (beginNumber[i].value < 0){
+            beginNumber[i].value = 0
+        }
+    })
 }
+
 const products = [
     {   img: "" ,
         ten:  "",
