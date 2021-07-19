@@ -9,42 +9,108 @@
 <body>
     <h1 id="tieuDe">Nước Tinh Khiết</h1>
     <div id="cart" class="gioHang">
-        <button> <img class="hinhCart" src="https://image.flaticon.com/icons/png/512/263/263142.png" alt=""></button>
-    </div>
+        <button id="openCart"> <img class="hinhCart" src="https://image.flaticon.com/icons/png/512/263/263142.png" alt=""></button>
+        <div id="unhide" class="hide">
+            <h2>Đơn hàng và thông tin khách hàng</h2>
+            <div class="haiPhan"> 
+                <div id="items">
+                    <div class="Item"> 
+                        <img class="hinhTrongGio" src="https://images.unsplash.com/photo-1585083969600-495ee7e3604b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym90dGxlJTIwd2F0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                        <div>
+                            <p class="tenTrongGio">Sản phẩm 1-VND/Bình</p>
+                            <p class="giaTrongGio">50000</p>
+                            <p> 
+                                <button class="xoaCart">xóa</button>
+                            </p>
+                            <p> 
+                                <button class="buttonC">+</button>
+                                <input type="text" class="beginN" value="1"></input>
+                                <button class="buttonT">-</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item"> 
+                        <img class="hinhTrongGio" src="https://images.unsplash.com/photo-1617734876762-f5659a065b06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJvdHRsZSUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                        <div>
+                            <p class="tenTrongGio">Sản phẩm 2-VND/Bình</p>
+                            <p class="giaTrongGio">55000</p>
+                            <p>
+                                <button class="xoaCart">xóa</button>
+                            </p>
+                            <p> 
+                                <button class="buttonC">+</button>
+                                <input type="text" class="beginN" value="1"></input>
+                                <button class="buttonT">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p> 
+                        <p>nhập tên</p>
+                        <input class="nhap" type="text">
+                    </p>
+                    <p> 
+                        <p>nhập Số điện thoại</p>
+                        <input class="nhap" type="text">
+                    </p>
+                    <p> 
+                        <p>nhập Địa chỉ</p>
+                        <input class="nhap" type="text">
+                    </p>
+                    <p> 
+                        <p>Tổng cộng</p>
+                        <input id="tongCong" class="nhap" type="text">
+                    </p>
+                    <button id="xoaHet">Xóa hết</button>
+                    <button id="dong">Đóng</button>
+                    <button id="HoanTatDatHang">Hoàn tất đặt hàng</button>    
+                </div>
+            </div>
+        </div>
+    </div> 
     <div class="hinhCover" >
         <img src="https://newevolutiondesigns.com/images/freebies/water-art-facebook-cover-preview-12.jpg" alt="">
     </div>
     <p class="gioiThieu"> Sản phẩm được đóng chai với công nghệ hiện đại, chứa nhiều khoáng chất với hàm lượng nhẹ và giữ nguyên sự tinh khiết của nước từ các mạch nước ngầm rất sâu.</p>
-    <div class="hinhSP">
-        <div id="product"> 
-            <img class="SP" src="https://images.unsplash.com/photo-1585083969600-495ee7e3604b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym90dGxlJTIwd2F0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
-            <p>Sản phẩm 1</p>
-            <p>50,000 VND</p>
-            <p>Bình</p>
-            <p> <button class="buttonCong">+</button>
-            <input type="text" class="beginNumber" value="1"></input>
-            <button class="buttonTru">-</button></p>
-            <p> <button class="themGioHang">Thêm vào giỏ hàng</button></p>
+    <div id="product" class="sapXepSP">
+        <div> 
+            <img class="hinhSP" src="https://images.unsplash.com/photo-1585083969600-495ee7e3604b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym90dGxlJTIwd2F0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+            <p class="tenSP">Sản phẩm 1-VND/Bình</p>
+            <p class="giaSP">50000</p>
+            <p> 
+                <button class="buttonCong">+</button>
+                <input type="text" class="beginNumber" value="1"></input>
+                <button class="buttonTru">-</button>
+            </p>
+            <p> 
+                <button class="themGioHang">Thêm vào giỏ hàng</button>
+            </p>
         </div>
         <div> 
-            <img class="SP" src="https://images.unsplash.com/photo-1617734876762-f5659a065b06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJvdHRsZSUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
-            <p>Sản phẩm 2</p>
-            <p>55,000 VND</p>
-            <p>Bình</p>
-            <p> <button class="buttonCong">+</button>
+            <img class="hinhSP" src="https://images.unsplash.com/photo-1617734876762-f5659a065b06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJvdHRsZSUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+            <p class="tenSP">Sản phẩm 2-VND/Bình</p>
+            <p class="giaSP">55000</p>
+            <p> 
+                <button class="buttonCong">+</button>
                 <input type="text" class="beginNumber" value="1"></input>
-            <button class="buttonTru">-</button></p>
-            <p> <button class="themGioHang">Thêm vào giỏ hàng</button></p>
+                <button class="buttonTru">-</button>
+            </p>
+            <p> 
+                <button class="themGioHang">Thêm vào giỏ hàng</button>
+            </p>
         </div>
         <div> 
-            <img class="SP" src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGJvdHRsZSUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
-            <p>Sản phẩm 3</p>
-            <p>60,000 VND</p>
-            <p>Bình</p>
-            <p> <button class="buttonCong">+</button>
+            <img class="hinhSP" src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGJvdHRsZSUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+            <p class="tenSP">Sản phẩm 3-VND/Bình</p>
+            <p class="giaSP">60000</p>
+            <p> 
+                <button class="buttonCong">+</button>
                 <input type="text" class="beginNumber" value="1"></input>
-            <button class="buttonTru">-</button></p>
-            <p> <button class="themGioHang">Thêm vào giỏ hàng</button></p>
+                <button class="buttonTru">-</button></p>
+            <p> 
+                <button class="themGioHang">Thêm vào giỏ hàng</button>
+            </p>
         </div>
     </div>
     <script src="index.js"></script>

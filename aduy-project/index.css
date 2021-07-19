@@ -19,7 +19,7 @@
 .gioiThieu {
     text-align: center;
 }
-.SP {
+.hinhSP {
     width: 170px;
     height: 250px;
     margin: 10px;
@@ -31,7 +31,34 @@ input {
     width: 50px;
     text-align: center;
 }
-.hinhSP {
+.sapXepSP {
     display: flex;
     justify-content: space-evenly;
+}
+.hide {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+.hinhTrongGio {
+    width: 85px;
+    height: 125px;
+    margin: 10px;
+}
+input {
+    width: 50px;
+    text-align: center;
+}
+.Item {
+    display: flex;
+}
+.haiPhan {
+    display: flex;
+    justify-content: space-evenly;
+}
+.nhap {
+    width: 200px;
+    text-align: center;
 }
